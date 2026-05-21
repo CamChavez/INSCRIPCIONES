@@ -1,0 +1,110 @@
+/* Inscripciones ICO - Estilos FES Aragon */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+       background: #f4f6f8; color: #1c2733; line-height: 1.5; }
+
+/* Header */
+.navbar { background: linear-gradient(135deg,#003366 0%,#0a4f8a 100%);
+          color:#fff; padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+.navbar-inner { max-width: 1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+.brand { font-size: 1.25rem; font-weight: 700; letter-spacing:.3px; }
+.brand small { display:block; font-size:.72rem; font-weight:400; opacity:.85; margin-top:2px; }
+.nav-links { display:flex; gap:.25rem; flex-wrap:wrap; }
+.nav-links a { color:#fff; text-decoration:none; padding:.4rem .8rem; border-radius:6px; font-size:.9rem; transition:background .15s; }
+.nav-links a:hover, .nav-links a.active { background: rgba(255,255,255,.18); }
+
+/* Layout */
+.container { max-width: 1280px; margin: 1.5rem auto; padding: 0 1.5rem; }
+.card { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 1px 4px rgba(0,0,0,.06); margin-bottom:1.25rem; }
+.page-title { font-size:1.5rem; color:#003366; margin-bottom:.4rem; }
+.page-subtitle { color:#5a6878; font-size:.9rem; margin-bottom:1.25rem; }
+
+/* Toolbar */
+.toolbar { display:flex; gap:.75rem; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:1rem; }
+.search-box { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
+.search-box input, .search-box select { padding:.5rem .8rem; border:1px solid #cdd5df; border-radius:6px; font-size:.92rem; }
+.search-box input:focus, .search-box select:focus { outline:2px solid #0a4f8a33; border-color:#0a4f8a; }
+
+/* Buttons */
+.btn { display:inline-block; padding:.5rem 1rem; border-radius:6px; border:none; font-size:.9rem; cursor:pointer; text-decoration:none; transition:.15s; font-weight:500; }
+.btn-primary { background:#0a4f8a; color:#fff; }
+.btn-primary:hover { background:#003366; }
+.btn-success { background:#1f8b4c; color:#fff; }
+.btn-success:hover { background:#176b3a; }
+.btn-warning { background:#d4922b; color:#fff; }
+.btn-warning:hover { background:#a8731a; }
+.btn-danger  { background:#c0392b; color:#fff; }
+.btn-danger:hover  { background:#962d22; }
+.btn-secondary { background:#5a6878; color:#fff; }
+.btn-secondary:hover { background:#3d4854; }
+.btn-sm { padding:.3rem .6rem; font-size:.82rem; }
+
+/* Tables */
+table.data { width:100%; border-collapse: collapse; background:#fff; font-size:.92rem; }
+table.data th { background:#003366; color:#fff; text-align:left; padding:.7rem .8rem; font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.4px; }
+table.data td { padding:.65rem .8rem; border-bottom:1px solid #e6ebf1; }
+table.data tr:hover td { background:#f9fbfd; }
+table.data .actions { white-space:nowrap; }
+.badge { display:inline-block; padding:.15rem .55rem; border-radius:99px; font-size:.74rem; font-weight:600; }
+.badge-ob { background:#e8f4fd; color:#0a4f8a; }
+.badge-op { background:#fff4e0; color:#a8731a; }
+.badge-act { background:#e3f6e8; color:#1f8b4c; }
+.badge-inact { background:#fde5e1; color:#c0392b; }
+
+/* Forms */
+form.crud { display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem 1.25rem; max-width:880px; }
+form.crud .full { grid-column: 1 / -1; }
+form.crud label { display:block; font-weight:600; font-size:.85rem; color:#3d4854; margin-bottom:.25rem; }
+form.crud input, form.crud select, form.crud textarea {
+    width:100%; padding:.55rem .8rem; border:1px solid #cdd5df; border-radius:6px; font-size:.92rem; font-family:inherit;
+}
+form.crud input:focus, form.crud select:focus, form.crud textarea:focus { outline:2px solid #0a4f8a33; border-color:#0a4f8a; }
+form.crud .actions { grid-column: 1 / -1; display:flex; gap:.6rem; margin-top:.5rem; }
+.required::after { content:" *"; color:#c0392b; }
+
+/* Flash messages */
+.flash { padding:.85rem 1rem; border-radius:8px; margin-bottom:1rem; font-weight:500; }
+.flash-success { background:#e3f6e8; color:#176b3a; border-left:4px solid #1f8b4c; }
+.flash-error   { background:#fde5e1; color:#962d22; border-left:4px solid #c0392b; }
+.flash-info    { background:#e8f4fd; color:#003366; border-left:4px solid #0a4f8a; }
+
+/* Dashboard cards */
+.stats { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; margin-bottom:1.5rem; }
+.stat-card { background:#fff; padding:1.25rem; border-radius:10px; box-shadow:0 1px 4px rgba(0,0,0,.06); border-top:4px solid #0a4f8a; }
+.stat-card .num { font-size:2rem; font-weight:700; color:#003366; }
+.stat-card .lbl { color:#5a6878; font-size:.85rem; text-transform:uppercase; letter-spacing:.5px; }
+
+/* Inscripcion */
+.grupos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap:1rem; }
+.grupo-card { background:#fff; border:2px solid #e6ebf1; border-radius:10px; padding:1rem; cursor:pointer; transition:.15s; }
+.grupo-card:hover { border-color:#0a4f8a; transform: translateY(-2px); box-shadow:0 4px 12px rgba(10,79,138,.12); }
+.grupo-card.selected { border-color:#1f8b4c; background:#f0faf3; }
+.grupo-card .cve { font-weight:700; color:#003366; font-size:1.05rem; }
+.grupo-card .mat { font-size:1.05rem; margin:.3rem 0; }
+.grupo-card .info { font-size:.82rem; color:#5a6878; }
+.grupo-card .horario { background:#f4f6f8; padding:.4rem .6rem; border-radius:5px; margin-top:.5rem; font-size:.82rem; }
+
+/* Comprobante */
+.comprobante { background:#fff; max-width:920px; margin:1rem auto; padding:2.5rem; box-shadow:0 2px 12px rgba(0,0,0,.1); border-radius:8px; }
+.comprobante-header { text-align:center; border-bottom:3px solid #003366; padding-bottom:1rem; margin-bottom:1.5rem; }
+.comprobante-header h1 { color:#003366; font-size:1.4rem; }
+.comprobante-header h2 { color:#5a6878; font-size:1rem; font-weight:500; margin-top:.4rem; }
+.comprobante .info-alumno { display:grid; grid-template-columns: repeat(2,1fr); gap:.4rem 2rem; margin-bottom:1.5rem; font-size:.92rem; }
+.comprobante .info-alumno strong { color:#003366; }
+.comprobante table { width:100%; border-collapse:collapse; font-size:.88rem; margin-bottom:1rem; }
+.comprobante table th { background:#003366; color:#fff; padding:.55rem; text-align:left; }
+.comprobante table td { padding:.5rem .55rem; border-bottom:1px solid #cdd5df; }
+.comprobante .totales { text-align:right; font-weight:700; color:#003366; margin-top:.5rem; padding-top:1rem; border-top:2px solid #003366; }
+.comprobante .firma { display:grid; grid-template-columns: repeat(2,1fr); gap:3rem; margin-top:3rem; text-align:center; }
+.firma-linea { border-top:1px solid #000; padding-top:.4rem; font-size:.85rem; }
+
+@media print {
+    .navbar, .no-print, .btn { display:none !important; }
+    body { background:#fff; }
+    .comprobante { box-shadow:none; }
+}
+
+@media (max-width: 720px) {
+    form.crud { grid-template-columns: 1fr; }
+    .navbar-inner { flex-direction:column; align-items:flex-start; }
+}
